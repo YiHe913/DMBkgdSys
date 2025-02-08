@@ -21,16 +21,16 @@ type MenuItem = Required<MenuProps>["items"][number];
 const items: MenuItem[] = [
   { key: "/", icon: <HomeOutlined />, label: "系统首页" },
   { key: "dataManagement", icon: <PieChartOutlined />, label: "数据管理" },
-  { key: "logManagement", icon: <ContainerOutlined />, label: "日志管理" },
+  // { key: "logManagement", icon: <ContainerOutlined />, label: "日志管理" },
   {
     key: "sub1",
     label: "信息管理",
     icon: <AppstoreOutlined />,
     children: [
-      { key: "userInformation", label: "用户信息" },
-      { key: "adminInformation", label: "管理员信息" },
-      { key: "permissionManagement", label: "权限管理" },
-      { key: "roleAssignment", label: "角色分配" },
+      { key: "userInfo", label: "用户信息" },
+      // { key: "adminInformation", label: "管理员信息" },
+      // { key: "permissionManagement", label: "权限管理" },
+      // { key: "roleAssignment", label: "角色分配" },
     ],
   },
   // {

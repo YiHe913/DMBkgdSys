@@ -1,0 +1,20 @@
+.personalInfo {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: left;
+  h1 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  :global {
+    :where(.css-dev-only-do-not-override-nqoqt9).ant-form-item
+      .ant-form-item-label
+      > label.ant-form-item-required:not(
+        .ant-form-item-required-mark-optional
+      )::before {
+      display: none;
+    }
+  }
+}
